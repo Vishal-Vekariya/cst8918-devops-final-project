@@ -31,7 +31,7 @@ variable "resource_prefix" {
 variable "weather_api_key" {
   description = "Weather API key for the application"
   type        = string
-  sensitive   = true  
+  sensitive   = true
 }
 
 variable "image_tag" {
@@ -50,7 +50,7 @@ variable "acr_name" {
   type        = string
 }
 
-variable "image_name" { 
+variable "image_name" {
   description = "Name of the Docker image to deploy"
   type        = string
   default     = "remix-weather"

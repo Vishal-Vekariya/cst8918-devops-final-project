@@ -22,11 +22,11 @@ module "aks" {
   resource_group_name = var.resource_group_name
 
   # Replace this with your actual subnet ID
-  subnet_id           = module.network.subnet_ids["test"]
-  vm_size             = var.vm_size
-  kubernetes_version  = var.kubernetes_version
-  service_cidr     = "10.10.0.0/16"
-  dns_service_ip   = "10.10.0.10"
+  subnet_id          = module.network.subnet_ids["test"]
+  vm_size            = var.vm_size
+  kubernetes_version = var.kubernetes_version
+  service_cidr       = "10.10.0.0/16"
+  dns_service_ip     = "10.10.0.10"
 }
 
 
@@ -39,7 +39,6 @@ module "app" {
   acr_login_server    = var.acr_login_server
   image_name          = var.image_name
   image_tag           = var.image_tag
-  redis_hostname      = module.app.redis_hostname
   weather_api_key     = var.weather_api_key
 
   providers = {

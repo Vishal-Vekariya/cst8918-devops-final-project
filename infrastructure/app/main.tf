@@ -2,6 +2,7 @@ provider "azurerm" {
   features {}
 }
 
+# Container Registry (ACR)
 resource "azurerm_container_registry" "acr" {
   name                = "finalprojectparm0100"
   location            = var.location
@@ -10,6 +11,7 @@ resource "azurerm_container_registry" "acr" {
   admin_enabled       = true
 }
 
+# Redis Cache
 resource "azurerm_redis_cache" "redis" {
   name                = "redis-parm0100"
   location            = var.location
@@ -20,11 +22,12 @@ resource "azurerm_redis_cache" "redis" {
   minimum_tls_version = "1.2"
 }
 
-resource "kubernetes_deployment" "remix_app"{
+# Remix App Deployment
+resource "kubernetes_deployment" "remix_app" {
   metadata {
     name = "remix-weather"
     labels = {
-      app = "remix"
+      app = "remix-weather"
     }
   }
 
@@ -47,14 +50,21 @@ resource "kubernetes_deployment" "remix_app"{
       spec {
         container {
           name  = "remix-weather"
-          image = "${var.acr_login_server}/remix-weather:${var.image_tag}"
+          image = "${var.acr_login_server}/${var.image_name}:${var.image_tag}"
+          image_pull_policy = "Always"
+
           port {
-            container_port = 3000
+            container_port = 8080   # 🟢 runs on 8080 internally
           }
 
           env {
             name  = "REDIS_URL"
             value = "redis://${azurerm_redis_cache.redis.hostname}:6380"
+          }
+
+          env {
+            name  = "REDIS_PASSWORD"
+            value = azurerm_redis_cache.redis.primary_access_key
           }
 
           env {
@@ -66,22 +76,26 @@ resource "kubernetes_deployment" "remix_app"{
     }
   }
 }
+
+# Kubernetes Service to expose app
 resource "kubernetes_service" "remix_service" {
   metadata {
     name = "remix-weather-service"
+    labels = {
+      app = "remix-weather"
+    }
   }
 
   spec {
     selector = {
-      app = "remix"
+      app = "remix-weather"
     }
 
     port {
-      port        = 80
-      target_port = 3000
+      port        = 80          # 🌐 exposed to the internet
+      target_port = 8080        # 🟢 maps to app port inside container
     }
 
     type = "LoadBalancer"
   }
 }
-
