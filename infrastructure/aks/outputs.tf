@@ -16,3 +16,11 @@ output "kube_config" {
 output "aks_id" {
   value = azurerm_kubernetes_cluster.aks.id
 }
+
+output "acr_name" {
+  value = azurerm_container_registry.acr.name
+}
+
+output "acr_login_server" {
+  value = azurerm_container_registry.acr.login_server
+}

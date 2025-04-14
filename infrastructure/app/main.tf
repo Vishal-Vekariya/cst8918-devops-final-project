@@ -2,15 +2,6 @@ provider "azurerm" {
   features {}
 }
 
-# Container Registry (ACR)
-resource "azurerm_container_registry" "acr" {
-  name                = "finalprojectparm0100"
-  location            = var.location
-  resource_group_name = var.resource_group_name
-  sku                 = "Basic"
-  admin_enabled       = true
-}
-
 # Redis Cache
 resource "azurerm_redis_cache" "redis" {
   name                = "redis-parm0100"

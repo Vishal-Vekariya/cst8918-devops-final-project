@@ -37,7 +37,12 @@ variable "weather_api_key" {
 variable "image_tag" {
   description = "Docker image tag for the application"
   type        = string
-  default     = "latest"
+}
+
+variable "image_name" {
+  description = "Name of the Docker image to deploy"
+  type        = string
+  default     = "cst8918-a01-weather-app"
 }
 
 variable "acr_login_server" {
@@ -48,12 +53,6 @@ variable "acr_login_server" {
 variable "acr_name" {
   description = "Name of the Azure Container Registry"
   type        = string
-}
-
-variable "image_name" {
-  description = "Name of the Docker image to deploy"
-  type        = string
-  default     = "remix-weather"
 }
 
 variable "redis_hostname" {

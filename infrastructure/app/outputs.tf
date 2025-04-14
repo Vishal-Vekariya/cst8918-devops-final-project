@@ -1,6 +1,3 @@
-output "acr_login_server" {
-  value = azurerm_container_registry.acr.login_server
-}
 
 output "redis_hostname" {
   value = azurerm_redis_cache.redis.hostname
