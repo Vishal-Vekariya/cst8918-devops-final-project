@@ -14,6 +14,8 @@ We structured our project using Infrastructure as Code (IaC) principles and desi
 - [Dhruv Parmar ](https://github.com/dhruv-13)
 ---
 
+## Since there was issue in Github while adding the screenshots path to the readme.md file, So We uploaded the screenshots inside Screenshot folder.
+
 ## 📁 Project Structure
 
 ```bash
@@ -60,6 +62,7 @@ On **every push or pull request** to any branch, the `infra-static_tests.yml` wo
 ![Image](https://github.com/user-attachments/assets/1ecc74f8-5f9e-46a0-aa31-390ad57d607a)
 
 ---
+![alt text](<screenshots/image.png)
 
 ### 🚀 CI/CD Pipeline
 
