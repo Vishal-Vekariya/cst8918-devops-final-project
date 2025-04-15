@@ -1,7 +1,7 @@
 {
     "name": "pull-request",
     "issuer": "https://token.actions.githubusercontent.com",
-    "subject": "repo:vishal-vekaria/cst8918-devops-final-project:pull_request",
+    "subject": "repo:Vishal-Vekariya/cst8918-devops-final-project:pull_request",
     "description": "Final project",
     "audiences": ["api://AzureADTokenExchange"]
   }

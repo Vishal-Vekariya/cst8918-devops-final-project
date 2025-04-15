@@ -1,7 +1,7 @@
 {
     "name": "branch-main",
     "issuer": "https://token.actions.githubusercontent.com",
-    "subject": "repo:vishal-vekaria/cst8918-devops-final-project:ref:refs/heads/main",
+    "subject": "repo:Vishal-Vekariya/cst8918-devops-final-project:ref:refs/heads/main",
     "description": "CST8918 Lab12 - GitHub Actions",
     "audiences": ["api://AzureADTokenExchange"]
   }
