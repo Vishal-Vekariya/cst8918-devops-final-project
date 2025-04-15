@@ -75,7 +75,7 @@ On **push to `main`** branch, the `infra-ci-cd.yml` workflow will:
 
 ## Remix Weather Application Screenshot
 
-![Remix Weather App Screenshot](./screenshots/"Screenshot (534).png)
+![Remix Weather App Screenshot](./screenshots/"image.png")
 
 ![Image](https://github.com/user-attachments/assets/d66356ad-b145-4785-bfe8-360921a38ff3)
 
