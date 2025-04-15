@@ -60,7 +60,7 @@ On **every push or pull request** to any branch, the `infra-static_tests.yml` wo
 ![Image](https://github.com/user-attachments/assets/1ecc74f8-5f9e-46a0-aa31-390ad57d607a)
 
 ---
-![alt text](<screenshots/Screenshot (534).png>)
+![alt text](<screenshots/image.png)
 
 ### 🚀 CI/CD Pipeline
 
