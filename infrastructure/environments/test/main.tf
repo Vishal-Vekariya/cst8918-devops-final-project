@@ -47,7 +47,7 @@ module "app" {
   location            = var.location
   resource_prefix     = var.resource_prefix
 
-  # 👇 ACR values passed through vars
+  #  ACR values passed through vars
   acr_name         = var.acr_name
   acr_login_server = var.acr_login_server
 
