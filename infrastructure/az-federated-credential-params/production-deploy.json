@@ -1,0 +1,7 @@
+{
+    "name": "production-deploy",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "subject": "repo:vishal-vekaria/cst8918-devops-final-project:environment:production",
+    "description": "Final project",
+    "audiences": ["api://AzureADTokenExchange"]
+  }
