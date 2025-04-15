@@ -6,6 +6,14 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.0"
     }
+    null = {
+      source  = "hashicorp/null"
+      version = "~> 3.0"
+    }
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.23.0"
+    }
   }
 
   backend "azurerm" {
@@ -14,7 +22,6 @@ terraform {
     container_name       = "tfstate"
     key                  = "test.terraform.tfstate"
     use_oidc             = true
-
   }
 }
 
