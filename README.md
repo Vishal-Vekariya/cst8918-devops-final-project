@@ -11,7 +11,7 @@ We structured our project using Infrastructure as Code (IaC) principles and desi
 - [Keshav Lamichhane](https://github.com/Klamichhane738)
 - [Vishal Vekariya](https://github.com/Vishal-Vekariya)
 - [Meet Jitendrakumar Patel](https://github.com/meetpatel1389)
-- [Dhruv Parmar ](https://github.com/dhruv-13))
+- [Dhruv Parmar ](https://github.com/dhruv-13)
 ---
 
 ## 📁 Project Structure
@@ -46,7 +46,7 @@ CST8918-DEVOPS-FINAL-PROJECT/
 ## All provisioning and deployment steps are automated through GitHub Actions. Simply push changes or open a Pull Request and the workflows will execute accordingly.
 
 ### Branches of main project with project structure
-![Image](https://github.com/user-attachments/assets/87743e5b-bdb4-434d-8e3c-07ca563c9ec3)
+![Image](https://github.com/user-attachments/assets/31fe74b9-dcf6-4b94-8a8c-fed1e09a6a73)
 
 ### 🔍 Static Tests & Terraform Validation
 
@@ -57,7 +57,7 @@ On **every push or pull request** to any branch, the `infra-static_tests.yml` wo
 
 ✅ This ensures all code and infrastructure follow best practices before merging.
 
-![Image](https://github.com/user-attachments/assets/4f460823-8fb8-4e04-861f-6f3dee4aa521)
+![Image](https://github.com/user-attachments/assets/1ecc74f8-5f9e-46a0-aa31-390ad57d607a)
 
 ---
 
@@ -75,10 +75,10 @@ On **push to `main`** branch, the `infra-ci-cd.yml` workflow will:
 
 ## Remix Weather Application Screenshot
 
-![Image](https://github.com/user-attachments/assets/102880e4-0856-45cd-9ac7-7c93fcb12eb1)
+![Image](https://github.com/user-attachments/assets/02396fa9-5a88-451c-a742-6fb6703b9cb0)
 
-![Image](https://github.com/user-attachments/assets/b1da4b6d-5476-42dc-9610-253e1d5033c3)
+![Image](https://github.com/user-attachments/assets/d66356ad-b145-4785-bfe8-360921a38ff3)
 
 ## Below is a screenshot of the successful GitHub Actions runs for CI/CD:
 
-![Image](https://github.com/user-attachments/assets/158f9b43-4ab2-4134-ac5f-53b3ce5e20a4)
+![Image](https://github.com/user-attachments/assets/76e0db91-3acf-40a9-8a7c-2fb51368495b)
