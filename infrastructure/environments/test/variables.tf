@@ -56,18 +56,18 @@ variable "acr_name" {
 }
 
 #variable "redis_hostname" {
- # description = "Hostname of the Redis cache"
- # type        = string
- # default     = "redis-cache"
+# description = "Hostname of the Redis cache"
+# type        = string
+# default     = "redis-cache"
 #}
 
 #variable "service_cidr" {
- ## type        = string
- # default     = "10.10.0.0/16"
+## type        = string
+# default     = "10.10.0.0/16"
 #}
 
 #variable "dns_service_ip" {
- # description = "DNS service IP address"
-  #type        = string
-  #default     = "10.10.0.10"
+# description = "DNS service IP address"
+#type        = string
+#default     = "10.10.0.10"
 #}
