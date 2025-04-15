@@ -81,4 +81,5 @@ On **push to `main`** branch, the `infra-ci-cd.yml` workflow will:
 
 ## Below is a screenshot of the successful GitHub Actions runs for CI/CD:
 
-![Image](https://github.com/user-attachments/assets/76e0db91-3acf-40a9-8a7c-2fb51368495b)
+![Image](https://github.com/user-attachments/assets/76e0db91-3acf-40a9-8a7c-2fb51368495b)![image](https://github.com/user-attachments/assets/31f62b1d-589e-44ac-b13f-5cf59b7a53d3)
+
