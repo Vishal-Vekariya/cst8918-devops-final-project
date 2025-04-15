@@ -169,5 +169,5 @@ jobs:
         path: infrastructure/environments/test
  
     - name: Terraform Apply
-      run: terraform apply -auto-approve
+      run: terraform apply -auto-approve tfplan
       working-directory: ./infrastructure/environments/test
