@@ -99,7 +99,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: tfplan
-        path: terraform/environments/dev
+        path: infrastructure/environments/test/tfplan
  
     - name: Create String Output
       id: tf-plan-string
@@ -166,8 +166,8 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: tfplan
-        path: terraform/environments/dev
+        path: infrastructure/environments/test
  
     - name: Terraform Apply
       run: terraform apply -auto-approve tfplan
-      working-directory: ./terraform/environments/dev
+      working-directory: ./infrastructure/environments/test
