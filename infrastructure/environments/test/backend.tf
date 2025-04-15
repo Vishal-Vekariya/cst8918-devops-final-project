@@ -6,21 +6,16 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 3.0"
     }
-  }
-
-  required_providers {
-    null = {
+      null = {
       source  = "hashicorp/null"
       version = "~> 3.0"
     }
-  }
-  
-  required_providers {
     kubernetes = {
       source  = "hashicorp/kubernetes"
       version = "~> 2.23.0"
     }
-}
+  }
+
 backend "azurerm" {
     resource_group_name  = "parm0100-githubactions-rg"
     storage_account_name = "parm0100githubactions"
