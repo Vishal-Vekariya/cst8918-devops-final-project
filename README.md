@@ -126,6 +126,7 @@ While deploying the infrastructure using Terraform via GitHub Actions, we encoun
 > **Error: Saved plan file is stale**  
 > The given plan file can no longer be applied because the state was changed after the plan was created.
 
+
 This typically happens when there is a delay between the `terraform plan` and `terraform apply` steps, or if another deployment alters the state in between.
 
 ### 🔧 Resolution
@@ -172,3 +173,5 @@ This capstone project provided us with hands-on experience in applying DevOps pr
 Overall, this project significantly strengthened our understanding of cloud infrastructure management, DevOps automation, and collaborative software development in a production-grade environment.
 
 ---
+=======
+![Image](https://github.com/user-attachments/assets/76e0db91-3acf-40a9-8a7c-2fb51368495b)![image](https://github.com/user-attachments/assets/31f62b1d-589e-44ac-b13f-5cf59b7a53d3)
