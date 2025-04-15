@@ -14,6 +14,8 @@ We structured our project using Infrastructure as Code (IaC) principles and desi
 - [Dhruv Parmar ](https://github.com/dhruv-13)
 ---
 
+## Since there was issue in Github while adding the screenshots path to the readme.md file, So We uploaded the screenshots inside Screenshot folder.
+
 ## 📁 Project Structure
 
 ```bash
